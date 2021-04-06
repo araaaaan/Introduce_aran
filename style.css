@@ -1,0 +1,160 @@
+* {
+  box-sizing: border-box;
+  text-decoration: none;
+  color: black;
+  font-family: 'Poppins','NotoSansKR', sans-serif;
+}
+
+body {
+
+  background-color: #EEE6E4;
+}
+
+.container {
+  display: flex;
+  margin-left: 50px;
+}
+
+#navi {
+  position: sticky;
+  padding: 12px;
+  margin: 10px 10px 10px 1000px;
+  position: sticky;
+  top: 0px;
+  display: flex;
+  font-size: 40px;
+}
+
+.box {
+  width: 300px;
+  height: 700px;
+  border-radius: 5%;
+
+}
+.profile {
+  padding-top: 30px;
+  position: sticky;
+  margin-bottom: 0px;
+
+}
+
+.profile_exp {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  font-size: 60px;
+}
+
+.profile_location {
+  margin-top: 5px;
+  padding: 0px;
+  margin-bottom: 5px;
+  font-size: 30px;
+}
+
+.profile_img {
+  margin: 100px 20px 30px 20px;
+  display: block;
+  width: 230px;
+  height: 230px;
+  border-radius: 50%;
+}
+
+
+.icons {
+  height: 50px;
+  width: 50px;
+  margin: 10px;
+}
+
+.hello {
+  width: 800px;
+  height: 600px;
+  margin-top: 100px;
+  margin-left: 200px;
+}
+
+#about {
+  font-size: 30px;
+  padding: 30px;
+}
+
+#loveit {
+  font-size: 30px;
+  padding: 30px;
+}
+
+div {
+
+  color: black;
+  text-align: center;
+  padding: 10px;
+}
+p{
+  font-size: 25px;
+}
+
+/* grid */
+.grid_container {
+  display: grid;
+  grid-template-columns: 414px 414px 414px;
+  grid-template-rows: 200px 200px;
+  grid-gap: 10px;
+}
+
+
+/* hover styles _ 주석 더 달기*/
+.things_list {
+  position: relative;
+}
+
+.like_image {
+  line-height: 0;
+  overflow: hidden;
+}
+
+.like_image img {
+  filter: blur(0px);
+  transition: filter 0.3s ease-in;
+  transform: scale(1.1);
+  width: 300px;
+  height: 170px;
+}
+
+.thing_title {
+  font-size: 1.5em;
+  font-weight: bold;
+  text-decoration: none;
+  z-index: 1;
+  position: absolute;
+  height: 95%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity .5s;
+  background: rgba(0,0,0,0);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.things_list:hover .thing_title {
+  opacity: 1;
+}
+
+.things_list:hover .like_image img {
+  filter: blur(2px);
+
+
+.footer {
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+    padding: 15px 0;
+    text-align: center;
+
+    font-size: 10px;
+    background: blue;
+  }
